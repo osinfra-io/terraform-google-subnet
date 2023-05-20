@@ -27,9 +27,8 @@ module "subnet" {
   ip_cidr_range = "10.60.0.0/20"
   name          = "example-subnet-us-east1"
   network       = "example-vpc"
-
-  project                  = "example-project"
-  region                   = "us-east1"
+  project       = "example-project"
+  region        = "us-east1"
 }
 ```
 
@@ -54,9 +53,7 @@ See the documentation for setting up a local development environment [here](http
 
 Links to documentation and other resources required to develop and iterate in this repository successfully.
 
-- [firewall](https://cloud.google.com/vpc/docs/firewalls)
-- [shared vpc](https://cloud.google.com/vpc/docs/shared-vpc)
-- [vpc](https://cloud.google.com/vpc/docs/vpc)
+- [subnets](https://cloud.google.com/vpc/docs/subnets)
 
 ### Tests
 
