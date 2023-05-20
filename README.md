@@ -65,5 +65,4 @@ bundle exec kitchen destroy
 
 ## Terraform Documentation
 
-[Global Infrastructure](global/README.md)
-[Regional Infrastructure](regional/README.md)
+- [Regional Infrastructure](regional/README.md)
