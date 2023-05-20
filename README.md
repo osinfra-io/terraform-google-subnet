@@ -6,7 +6,7 @@
 
 **[Infracost](https://www.infracost.io):**
 
-[![infracost](https://img.shields.io/endpoint?label=Default%20Subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/19c599ec-c2ad-4031-8480-2110b02be0eb/branch/d36a38e2-44a6-4e64-a082-5f81bd3f9f61/terraform-google-subnet%2520-%2520Default%2520VPC)](https://dashboard.infracost.io/org/osinfra-io/repos/19c599ec-c2ad-4031-8480-2110b02be0eb)
+[![infracost](https://img.shields.io/endpoint?label=Default%20Subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch//terraform-google-subnet%2520-%2520Default%2520Subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019) [![infracost](https://img.shields.io/endpoint?label=Internal%20Load%20Balancer%20Subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch//terraform-google-subnet%2520-%2520Internal%2520Load%2520Balancer%2520Subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019)
 
 Monthly cost estimates for this module based off these usage values: [Default Subnet](test/fixtures/default_subnet/infracost-usage.yml), [Internal Load Balancer Subnet](test/fixtures/internal_lb_subnet/infracost-usage.yml)
 
@@ -24,16 +24,11 @@ Here is an example of a basic configuration:
 module "subnet" {
   source   = "github.com/osinfra-io/terraform-google-subnet//regional?ref=v0.0.0"
 
-  project = "example-project"
-
-  subnets = {
-    default-subnet-us-east1 = {
-      private_ip_google_access = true
-      network                  = "example-vpc"
-      range                    = "10.60.0.0/20"
-      region                   = "us-east1"
-    }
-  }
+  ip_cidr_range = "10.60.0.0/20"
+  name          = "example-subnet-us-east1"
+  network       = "example-vpc"
+  project       = "example-project"
+  region        = "us-east1"
 }
 ```
 
@@ -58,9 +53,7 @@ See the documentation for setting up a local development environment [here](http
 
 Links to documentation and other resources required to develop and iterate in this repository successfully.
 
-- [firewall](https://cloud.google.com/vpc/docs/firewalls)
-- [shared vpc](https://cloud.google.com/vpc/docs/shared-vpc)
-- [vpc](https://cloud.google.com/vpc/docs/vpc)
+- [subnets](https://cloud.google.com/vpc/docs/subnets)
 
 ### Tests
 
@@ -72,5 +65,4 @@ bundle exec kitchen destroy
 
 ## Terraform Documentation
 
-[Global Infrastructure](global/README.md)
-[Regional Infrastructure](regional/README.md)
+- [Regional Infrastructure](regional/README.md)
