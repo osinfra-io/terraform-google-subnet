@@ -24,16 +24,12 @@ Here is an example of a basic configuration:
 module "subnet" {
   source   = "github.com/osinfra-io/terraform-google-subnet//regional?ref=v0.0.0"
 
-  project = "example-project"
+  ip_cidr_range = "10.60.0.0/20"
+  name          = "example-subnet-us-east1"
+  network       = "example-vpc"
 
-  subnets = {
-    default-subnet-us-east1 = {
-      private_ip_google_access = true
-      network                  = "example-vpc"
-      range                    = "10.60.0.0/20"
-      region                   = "us-east1"
-    }
-  }
+  project                  = "example-project"
+  region                   = "us-east1"
 }
 ```
 

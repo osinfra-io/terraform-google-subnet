@@ -4,6 +4,10 @@
 version: 0.1
 
 projects:
-  - name: "terraform-google-subnet - Default VPC"
+  - name: "terraform-google-subnet - Default Subnet"
     path: test/fixtures/default_subnet
     usage_file: test/fixtures/default_subnet/infracost-usage.yml
+
+  - name: "terraform-google-subnet - Internal Load Balancer Subnet"
+    path: test/fixtures/default_subnet
+    usage_file: test/fixtures/internal_lb_subnet/infracost-usage.yml
