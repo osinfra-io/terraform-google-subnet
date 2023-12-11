@@ -6,12 +6,12 @@
 
 **[Infracost](https://www.infracost.io):**
 
-[![infracost](https://img.shields.io/endpoint?label=Default%20Subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch/79dd8603-0126-490f-9be5-45ea5c7b19fe/terraform-google-subnet%2520-%2520Default%2520Subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019) [![infracost](https://img.shields.io/endpoint?label=Internal%20Load%20Balancer%20Subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch/79dd8603-0126-490f-9be5-45ea5c7b19fe/terraform-google-subnet%2520-%2520Internal%2520Load%2520Balancer%2520Subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019)
+[![infracost](https://img.shields.io/endpoint?label=default_subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch/79dd8603-0126-490f-9be5-45ea5c7b19fe/default_subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019?tab=settings) [![infracost](https://img.shields.io/endpoint?label=internal_lb_subnet&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/d88583c7-8fe6-43ba-87d9-fced10a54019/branch/79dd8603-0126-490f-9be5-45ea5c7b19fe/internal_lb_subnet)](https://dashboard.infracost.io/org/osinfra-io/repos/d88583c7-8fe6-43ba-87d9-fced10a54019?tab=settings)
 
 Monthly cost estimates for this module based on these usage values:
 
-- [default subnet](test/fixtures/default_subnet/infracost-usage.yml)
-- [internal load balancer subnet](test/fixtures/internal_lb_subnet/infracost-usage.yml)
+- [default_subnet](test/fixtures/default_subnet/infracost-usage.yml)
+- [internal_lb_subnet](test/fixtures/internal_lb_subnet/infracost-usage.yml)
 
 ## Repository Description
 

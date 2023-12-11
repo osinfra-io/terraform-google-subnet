@@ -2,7 +2,7 @@ module "regional" {
   source = "../../../regional"
 
   ip_cidr_range = "10.61.240.0/20"
-  name          = "internal-lb-subnet-us-east1"
+  name          = "kitchen-test-internal-lb-subnet-us-east1"
   network       = "kitchen-vpc"
   project       = var.project
 

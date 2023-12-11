@@ -11,7 +11,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 4.63.1 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.8.0 |
 
 ## Modules
 
@@ -41,5 +41,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_name"></a> [name](#output\_name) | The name of the subnetwork |
 | <a name="output_project"></a> [project](#output\_project) | The project ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
