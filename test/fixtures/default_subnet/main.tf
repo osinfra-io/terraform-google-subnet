@@ -1,7 +1,7 @@
 module "regional" {
   source = "../../../regional"
 
-  ip_cidr_range = "10.60.0.0/20"
+  ip_cidr_range = "10.60.32.0/20"
   name          = "default-subnet-us-east1"
   network       = "kitchen-vpc"
 
@@ -20,11 +20,11 @@ module "regional" {
   secondary_ip_ranges = [
     {
       range_name    = "default-services-us-east1"
-      ip_cidr_range = "10.60.240.0/20"
+      ip_cidr_range = "10.61.16.0/20"
     },
     {
       range_name    = "default-pods-us-east1"
-      ip_cidr_range = "10.0.0.0/14"
+      ip_cidr_range = "10.8.0.0/14"
     }
   ]
 }
