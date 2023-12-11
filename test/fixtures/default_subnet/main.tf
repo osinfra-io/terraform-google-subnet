@@ -1,8 +1,8 @@
 module "regional" {
   source = "../../../regional"
 
-  ip_cidr_range = "10.60.32.0/20"
-  name          = "default-subnet-us-east1"
+  ip_cidr_range = "10.60.0.0/20"
+  name          = "kitchen-test-subnet-us-east1"
   network       = "kitchen-vpc"
 
   # When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and
