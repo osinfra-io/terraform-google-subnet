@@ -1,4 +1,4 @@
 variable "project" {
   type    = string
-  default = "testing-kitchen-tfd2-sb"
+  default = "test-vpc-host-tf12-sb"
 }
